@@ -1,0 +1,75 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Pokemon </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <img
+    src="https://www.pngplay.com/wp-content/uploads/2/Pokeball-PNG-Photo-Image.png"
+    width="350"
+    height="320"
+  />
+
+  <ion-item>
+    <ion-toolbar>
+      <ion-title>Buscar pokemons registrados</ion-title>
+    </ion-toolbar>
+    <ion-toolbar>
+      <ion-searchbar></ion-searchbar>
+    </ion-toolbar>
+  </ion-item>
+
+  <ion-list inset="true">
+    <ion-list-header>Ubicación</ion-list-header>
+    <ion-breadcrumbs>
+      <ion-breadcrumb href="#"> Adopciones </ion-breadcrumb>
+      <ion-breadcrumb href="#"> Primer Dia </ion-breadcrumb>
+      <ion-breadcrumb href="#"> Pokemon </ion-breadcrumb>
+    </ion-breadcrumbs>
+
+    <ion-list-header>Tipos de Pokemon</ion-list-header>
+    <ion-accordion-group>
+      <ion-accordion value="colors">
+        <ion-item slot="header">
+          <ion-label>Tipo</ion-label>
+        </ion-item>
+        <ion-list slot="content">
+          <ion-item>
+            <ion-label>Planta</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Agua</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Fuego</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-accordion>
+    </ion-accordion-group>
+
+    <ion-item>
+      <ion-label>Adoptar un Pokemon</ion-label>
+      <ion-checkbox color="danger" checked slot="start"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+  <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+    <ion-fab-button color="secondary">
+      <ion-icon md="caret-back" ios="chevron-back-circle-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="start">
+      <ion-fab-button color="light">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="light">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="light">
+        <ion-icon name="logo-vimeo"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="light">
+        <ion-icon name="logo-google"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
